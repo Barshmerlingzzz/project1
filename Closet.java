@@ -3,7 +3,7 @@
 public class Closet {
     private Shirt[] shirtsArr;
 
-    public Closet() {
+    public Closet(Shirt[] shirtsArr) {
     }
 
     public Shirt[] getShirtsBySize(int size){
