@@ -8,7 +8,18 @@ public class Bed {
         this.height = height;
         this.pillows = pillows;
         this.sheetColor = sheetColor;
+        this.price = price();
+    }
+    public Bed( double height, String sheetColor){
+        this.pillows = 1;
+        this.sheetColor = sheetColor;
+        this.height = height;
+        this.price = 100.0;
+        this.price = price;
+    }
 
+    private double price() {
+        return 0;
     }
 
     public double getHeight() {
@@ -42,11 +53,6 @@ public class Bed {
     public void setSheetColor(String sheetColor) {
         this.sheetColor = sheetColor;
     }
-    public Bed( double height, String sheetColor){
-        this.pillows = 1;
-        this.sheetColor = sheetColor;
-        this.height = height;
-        this.price = 100.0;
-    }
+
 
 }
