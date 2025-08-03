@@ -1,24 +1,45 @@
 public class Bed {
     private double height;
     private int pillows;
-    private String sheet_color;
+    private String sheetColor;
+    private double price;
 
     public Bed(int pillows, double height, String sheetColor){
         this.height = height;
         this.pillows = pillows;
-        this.sheet_color = sheetColor;
+        this.sheetColor = sheetColor;
+        this.price = price();
+    }
+    public Bed( double height, String sheetColor){
+        this.pillows = 1;
+        this.sheetColor = sheetColor;
+        this.height = height;
+        this.price = 100.0;
+        this.price = price;
+    }
+
+    private double price() {
+        return 0;
     }
 
     public double getHeight() {
         return height;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     public int getPillows() {
         return pillows;
     }
 
-    public String getSheet_color() {
-        return sheet_color;
+    public String getSheetColor() {
+        return sheetColor;
     }
 
     public void setHeight(double height) {
@@ -29,8 +50,9 @@ public class Bed {
         this.pillows = pillows;
     }
 
-    public void setSheet_color(String sheet_color) {
-        this.sheet_color = sheet_color;
+    public void setSheetColor(String sheetColor) {
+        this.sheetColor = sheetColor;
     }
+
 
 }
