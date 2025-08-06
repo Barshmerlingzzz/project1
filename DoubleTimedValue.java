@@ -1,4 +1,4 @@
-public class DoubleTimeValue {
+public class DoubleTimedValue {
 private double value;
 private double time;
 

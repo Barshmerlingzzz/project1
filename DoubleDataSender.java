@@ -1,3 +1,5 @@
+import java.time.LocalTime;
+
 public class DoubleDataSender {
 
     private final String name;
