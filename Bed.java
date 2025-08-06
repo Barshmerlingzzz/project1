@@ -13,10 +13,7 @@ public class Bed {
         this.price = price();
     }
     public Bed( double height, String sheetColor){
-        this.pillows = PILLOWS;
-        this.sheetColor = sheetColor;
-        this.height = height;
-        this.price = PRICE;
+        this(PILLOWS,height,sheetColor);
     }
 
     private double price() {
