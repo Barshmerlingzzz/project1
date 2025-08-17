@@ -1,4 +1,4 @@
-public abstract class Patrick extends Fish {
+public abstract class Patrick extends Fish implements ProfessionalBasketBallPlayer{
     public Patrick(String name, int age, String favFood) {
         super(name, age, favFood);
     }

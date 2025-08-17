@@ -1,4 +1,4 @@
-public class BobSponge extends Fish {
+public class BobSponge extends Fish implements ProfessionalBasketBallPlayer {
     public BobSponge(String name, int age, String favFood) {
         super(name, age, favFood);
     }
@@ -7,7 +7,8 @@ public class BobSponge extends Fish {
     public void goToWork() {
         takeTheCar();
     }
-    public void  playBasketBall(){
+
+    public void playBasketBall() {
         System.out.println("playinBasketBall");
     }
 }
